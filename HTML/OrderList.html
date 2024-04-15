@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Order Page</title>
+    <link rel="stylesheet" href="../view/CSS/OrderList.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="wrapper box1">
+        <div class="sidebar">
+          <div class="img">
+            <img class="image-logo" src="../images/homepage-images/logo.png" alt="" />
+          </div>
+
+          <ul>
+            <li style="background-color: #4414a4">
+              <a href="/showOrders" class="icon-a" style="color: white"
+                ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+                >&nbsp;&nbsp; Order
+              </a>
+            </li>
+            <li>
+              <a href="/viewProductList" class="icon-a"
+                ><i class="fa fa-product-hunt" aria-hidden="true"></i
+                >&nbsp;&nbsp; Product
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="box2-header">
+          <a href="/adminLogout"><input class="btn" type="button" value="LOGOUT" /></a>
+        </div>
+        <div class="order-list">
+          <h2 class="heading-order">Orders</h2>
+          
+          
+          <div class="table-container">
+            <table class="OrderTable">
+              <tr>
+                <th>Order ID</th>
+                <th>Username</th>
+                <th>Items</th>
+                <th>Price</th>
+                <th>Order Date</th>
+                <th>Order Time</th>
+              </tr>
+              <!-- Inserted static HTML for order entries -->
+              <tr>
+                <td style="font-weight: bold">1</td>
+                <td>
+                  <img class="view-cart-img" src="../images/user1.jpg" alt="" />
+                  <h4>John Doe</h4>
+                  <p>john@example.com</p>
+                </td>
+                <td>
+                  <img class="view-cart-img" src="../images/product1.jpg" alt="" />
+                  <h4>Product 1</h4>
+                  <p>Brand A</p>
+                </td>
+                <td>$50</td>
+                <td>2024-04-01</td>
+                <td>10:00:00</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold">2</td>
+                <td>
+                  <img class="view-cart-img" src="../images/user2.jpg" alt="" />
+                  <h4>Jane Smith</h4>
+                  <p>jane@example.com</p>
+                </td>
+                <td>
+                  <img class="view-cart-img" src="../images/product2.jpg" alt="" />
+                  <h4>Product 2</h4>
+                  <p>Brand B</p>
+                </td>
+                <td>$60</td>
+                <td>2024-04-02</td>
+                <td>11:00:00</td>
+              </tr>
+              <!-- Add more order entries as needed -->
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
